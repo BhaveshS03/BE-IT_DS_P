@@ -37,6 +37,8 @@
 
 ### Assignment 1:
 
+**Explanation:** Uses Java RMI (Remote Method Invocation) to allow a client to invoke methods on a remote server object. The server implements an interface for addition, which the client calls remotely.
+
 Terminal 1:
 
     javac *.java
@@ -56,6 +58,8 @@ Terminal 4:
 
 ### Assignment 2:
 
+**Explanation:** Uses CORBA (Common Object Request Broker Architecture) to facilitate communication between a client and a server. The server provides a string reversal service via an IDL interface, which the client consumes.
+
 Terminal 1:
 
     idlj -fall ReverseModule.idl
@@ -69,6 +73,8 @@ Terminal 2:
 
 ### Assignment 3:
 
+**Explanation:** Uses MPJ Express (MPI for Java) to distribute an array summing task across multiple processors. The master scatters array chunks to workers, which compute local sums, and then the master gathers these to compute the total.
+
 Terminal:
 
     export MPJ_HOME=/home/ubuntu/Downloads/mpj-v0_44
@@ -77,6 +83,8 @@ Terminal:
     $MPJ_HOME/bin/mpjrun.sh -np 4 ArrSum
 
 ### Assignment 4:
+
+**Explanation:** Implements the Berkeley algorithm for clock synchronization using Python. A time daemon (server) polls clients for their times, computes the average difference, and instructs clients to adjust their clocks to stay synchronized.
 
 Terminal 1:
 
@@ -89,12 +97,16 @@ Terminal 2:
 
 ### Assignment 5:
 
+**Explanation:** Implements the Token Ring mutual exclusion algorithm in Java. Processes are organized in a logical ring and pass a token. A process can only enter its critical section when it holds the token.
+
 Terminal
 
     javac Tring.java
     java Tring
 
-### Assignmnet 6:
+### Assignment 6:
+
+**Explanation:** Implements the Bully and Ring leader election algorithms. These algorithms elect a new coordinator when the current one fails, typically based on the highest process ID.
 
 Terminal
 
@@ -105,9 +117,13 @@ Terminal
     
 ### Assignment 7:
 
+**Explanation:** Creates a simple web service and a client application (calculator) to consume it, demonstrating basic Web Services/SOA principles.
+
    [Youtube tutorial](https://www.youtube.com/watch?v=0z-HvSfr-M4)
     
 ### Extra:
+
+**Explanation:** Implements a basic client-server communication system using Java Sockets. Demonstrates low-level network programming with TCP/IP.
 
 Terminal 1:
 
