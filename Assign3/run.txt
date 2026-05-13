@@ -1,0 +1,5 @@
+5.sudo apt update
+6.sudo apt install mpich
+7.mpicc --version
+8.mpicc sum.c -o sum
+9.mpirun -np 4 ./sum
